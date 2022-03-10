@@ -1,19 +1,21 @@
-﻿//UC1
-Console.WriteLine("Enter the co_ordinates x1 :");
-Console.WriteLine("Enter the co_ordinates x2 :");
-Console.WriteLine("Enter the co_ordinates y1 :");
-Console.WriteLine("Enter the co_ordinates y2 :");
+﻿//UC3
+Console.WriteLine("Enter the length of lineone:");
+Console.WriteLine("Enter the length of linetwo:");
 
-double x1 = double.Parse(Console.ReadLine());
-double x2 = double.Parse(Console.ReadLine());
-double y1 = double.Parse(Console.ReadLine());
-double y2 = double.Parse(Console.ReadLine());
+double lineone = double.Parse(Console.ReadLine());
+double linetwo = double.Parse(Console.ReadLine());
 
-double lengthx = Math.Pow((x2 - x1), 2);
-double lengthy = Math.Pow((y2 - y1), 2);
+if (lineone == linetwo)
+{
+    Console.WriteLine("lineone is equal to linetwo");
 
-double sum = lengthx + lengthy;
-double lengthOfLine = (Math.Sqrt(sum));
-
-Console.WriteLine("Answer : " + lengthOfLine);
+}
+else if (lineone > linetwo)
+{
+    Console.WriteLine("lineone is greater than linetwo");
+}
+else
+{
+    Console.WriteLine("lineone is less than linetwo");
+}
 
